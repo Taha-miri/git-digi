@@ -1,0 +1,265 @@
+header {
+  width: 100%;
+  height: 180px;
+  box-shadow: 3px 0px 4px rgb(144, 144, 144);
+  .middle {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .middle-right {
+      display: flex;
+      width: 80%;
+      height: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+      .middle-logo {
+        height: 100%;
+        width: 20%;
+        svg {
+          width: 100%;
+          height: 100%;
+          padding: 7px 8px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .middle-left {
+      position: relative;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+  }
+  position: fixed;
+  opacity: 1;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.header-picture {
+  width: 100%;
+  height: 70px;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.search {
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  position: relative;
+  svg {
+    top: 15px;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    font-family: IRAN;
+    font-size: 5px;
+    font-weight: bold;
+    position: absolute;
+    right: 1px;
+    z-index: 5;
+  }
+}
+
+.search > input[type="search"] {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: unset;
+  background: #f0f0f1;
+  padding-right: 20px;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+.search > input[type="search"]::placeholder {
+  font-family: IRAN;
+  font-size: 14px;
+  padding-right: 50px;
+}
+
+.search > input[type="search"]:focus {
+  outline: unset;
+  background: whitesmoke;
+  box-shadow: 5px 5px 25px lightgray;
+  width: 100%;
+  height: 50vh;
+  z-index: 6;
+}
+
+.login {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-right: 5px;
+  width: 145px;
+  height: 45px;
+  position: absolute;
+  right: 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+}
+
+.login > a {
+  width: fit-content;
+  font-family: IRAN;
+  box-sizing: border-box;
+  color: #000;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: auto;
+  padding: 2px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.login > a > svg {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  vertical-align: middle;
+  width: 18px;
+  height: 21px;
+}
+
+.cart {
+  position: absolute;
+  top: 20px;
+  right: 260px;
+  width: 40px;
+  height: 30px;
+  border-right: 1px solid rgb(215, 215, 215);
+  svg {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* city */
+
+.cities {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  left: -260px;
+}
+
+label[for="show"] {
+  font-family: IRAN;
+  font-size: small;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 500ms;
+  &:hover {
+    transform: scale(85%);
+  }
+}
+
+input#show {
+  margin: 20px;
+}
+
+.modal {
+  width: 400px;
+  height: 600px;
+  background-color: lightgray;
+  box-shadow: 2px 5px 25px gray;
+  border-radius: 10px;
+  position: absolute;
+  left: 500px;
+  top: 0px;
+  opacity: 0;
+  transition: 400ms;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+input#show:checked ~ .modal {
+  opacity: 1;
+}
+
+label[for="close"] {
+  width: 50px;
+  height: 30px;
+  color: rgb(97, 97, 97);
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
+  right: 0;
+  position: absolute;
+  margin-right: 25px;
+  &:hover{
+    color: red;
+  }
+}
+
+input#close:checked ~ .modal {
+  opacity: 0;
+}
+
+input#show,
+input#close {
+  display: none;
+}
+
+.h44 {
+  width: 100%;
+  position: absolute;
+  margin-top: 14px;
+  margin-right: 55px;
+  font-family: IRAN;
+  color: black;
+ 
+}
+.cityies {
+  width: 100%;
+  height: 90%;
+  margin-top: 60px;
+  background-color: aqua;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: auto;
+  direction: ltr;
+  span{
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: end;
+    line-height: 80px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: IRAN;
+    background-color: rgb(161, 159, 159);
+    border-bottom: 2px solid black;
+  }
+}

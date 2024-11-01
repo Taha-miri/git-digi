@@ -1,0 +1,135 @@
+.menus-phones {
+    width: 1340px;
+    height: 420px;
+    position: absolute;
+    bottom: -500%;
+    right: calc(50% - 1340px / 2);
+    border: 1.5px solid #dcdcdc;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+  
+    .phone-first {
+      width: 24%;
+      height: 100%;
+      border-left: 1px solid #d3d3d3;
+    }
+    .phone-seconed {
+      border-left: 1px solid #d3d3d3;
+    }
+    /* .phone-third {
+    } */
+    .phone-forth {
+      border-right: 1px solid #d3d3d3;
+    }
+  }
+  
+  .phone-first,
+  .phone-seconed,
+  .phone-third,
+  .phone-forth {
+    width: 24%;
+    height: 100%;
+    .first-title {
+      font-family: IRAN;
+      font-size: 18px;
+      padding-top: 5px;
+      padding-right: 15px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-flow: column nowrap;
+    }
+  }
+  
+  .title-titles {
+    color: #5a5959;
+    margin-top: 10px;
+    font-size: 11px;
+  }
+  
+  .first-body {
+    display: flex;
+    flex-flow: row wrap;
+  
+    margin: 5px auto;
+    width: 80%;
+    height: 82%;
+  }
+  
+  .right {
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .left {
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .tr,
+  .tl {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    a {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  
+  .br,
+  .bl {
+    padding: 5px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    a {
+      img {
+        width: 100%;
+        /* height: 100%; */
+      }
+    }
+  }
+  
+  .tr {
+    box-sizing: border-box;
+    border-bottom: 2px solid #d3d3d3;
+    border-left: 2px solid #d3d3d3;
+  }
+  .tl {
+    box-sizing: border-box;
+    border-bottom: 2px solid #d3d3d3;
+  }
+  
+  .br {
+    box-sizing: border-box;
+    border-left: 2px solid #d3d3d3;
+    border-top: 2px solid #d3d3d3;
+  }
+  
+  .bl {
+    box-sizing: border-box;
+    border-top: 2px solid #d3d3d3;
+  }
+  

@@ -1,0 +1,26 @@
+.introduc {
+  position: absolute;
+  right: calc(50% - 1410px / 2);
+  bottom: -930px;
+  width: 1350px;
+  height: 250px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .introduce-image {
+    cursor: pointer;
+    width: 340px;
+    height: 250px;
+    a {
+      width: inherit;
+      height: inherit;
+      img {
+        width: inherit;
+        height: inherit;
+        border-radius: 30px;
+      }
+    }
+  }
+}

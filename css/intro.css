@@ -1,0 +1,29 @@
+.intro {
+  position: absolute;
+  bottom: -225%;
+  left: calc(50% - 1370px / 2);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1370px;
+  height: 250px;
+  .intro-right {
+    width: 45%;
+    height: 100%;
+    img {
+      width: 100%;
+      border-radius: 35px;
+      height: 100%;
+    }
+  }
+  .intro-left {
+    width: 45%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 35px;
+    }
+  }
+}
